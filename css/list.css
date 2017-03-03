@@ -1,0 +1,65 @@
+body{
+  margin-top: 10px;
+  font-family:calibri,sans-serif;
+}
+
+.strip{
+  border-bottom: 1px solid silver;
+  width: 95%;
+  margin:0px 0px 10px 0px;    
+}
+
+.strip img{
+  float: left;
+/*  margin-left: 10px;*/
+  margin-right: 5px; 
+  margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.summary{
+  margin-bottom: 25px;
+}
+
+.buttons{
+  float: right;
+}
+
+.buttons a{
+  font-size:.75em;
+  color: darkgreen;
+  text-decoration: none;     
+  
+}
+
+.buttons a:hover{
+  color:darkred;
+}
+
+.buttons i.fa{
+  margin-left: .5em;
+}
+/*my styles */
+
+
+.song-artist{
+  margin-left: 55px;  
+  font-size: .65em;
+  font-weight: bold;      
+  color:grey;
+  text-transform: uppercase;
+}
+
+.song-title{
+  font-size:.75em;
+  font-weight: bold;
+  margin-left: 55px;  
+  
+}
+
+.song-album{
+  margin-left: 55px;
+  font-size:.8em;
+  color:darkred;
+    font-style: italic
+}
