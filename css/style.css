@@ -5,9 +5,14 @@ body{
 
 .strip{
   padding: 10px;
-  border-top: 1px solid silver;
-  border-top: 1px solid silver;
+  /*border-top: 1px solid silver;*/
+  border-bottom: 1px solid silver;
   width: 600px;
+}
+
+.strip:last-of-type {
+  border-bottom: none;
+  background: #ff0000;
 }
 
 .strip img{
