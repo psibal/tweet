@@ -30,7 +30,7 @@ body{
 }
 
 .buttons a{
-/*  font-size:1em;*/
+  font-size:3.5em;
   color: darkgreen;
   text-decoration: none;     
   
@@ -41,7 +41,7 @@ body{
 }
 
 .buttons i.fa{
-  margin-left: .5em;
+  margin-left: 20px;
 }
 /*my styles */
 
