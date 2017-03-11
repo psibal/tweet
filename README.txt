@@ -12,3 +12,10 @@ git push -u origin master
 …or push an existing repository from the command line
 git remote add origin https://github.com/psibal/tweet.git
 git push -u origin master
+
+
+
+...updating github
+git add *
+git commit -m "first commit"
+git push -u origin master
