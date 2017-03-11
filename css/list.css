@@ -10,9 +10,16 @@ body{
 
 .strip{
   border-bottom: 1px solid silver; 
-  margin:10px 0px 5px 0px;    
-  padding-bottom: 5px;    
+  margin:0px 0px 5px 0px;    
+  padding-top: 5px;  
+  padding-bottom: 5px;  
+    
 }
+
+.strip:hover{
+    background-color:beige
+}
+
 
 .strip img{
   float: left;
