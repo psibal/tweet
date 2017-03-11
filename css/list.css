@@ -17,9 +17,9 @@ body{
 .strip img{
   float: left;
   margin-left: 10px;
-  margin-right: 15px; 
+  margin-right: 25px; 
   margin-bottom: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .summary{
