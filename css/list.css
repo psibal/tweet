@@ -4,9 +4,12 @@ body{
   font-size:2em;
 }
 
+.container {
+  width: 100%;
+}
+
 .strip{
-  border-bottom: 1px solid silver;
-  /*width: 90%;*/
+  border-bottom: 1px solid silver; 
   margin:10px 0px 10px 0px;    
 }
 
