@@ -25,10 +25,11 @@
             ol.cities li {
                 counter-increment: myCounter;
                 margin: 0 0 15px 0;
-                padding: 10px 0 0 5px;
+                padding: 10px 0 20px 5px;
                 position: relative;
                 color:#ccffff;
                 font-size: .9em;
+                border-bottom: 1px solid #fff;
             }
             ol.cities li::before{
                 content: counter(myCounter,decimal-leading-zero);
@@ -48,6 +49,7 @@
             ol.cities li em{
                 display: block;
                 font-family: 'Roboto', san-serif;
+                 font-size: .8em;
                 letter-spacing: .1em;
                 text-transform: uppercase;
                 color:#fff;
@@ -60,7 +62,7 @@
                 font-weight: 900;
                 font-size: 1.25em;
                 color: #fff;
-                margin:0;
+                margin:0 0 5px 0;
             }
 
             .buttons{
