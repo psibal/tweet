@@ -89,24 +89,47 @@
                 text-transform: uppercase;
             }
 
-           .card1 .actions a {
-                
+           .card1 .actions a {                
                 text-transform: uppercase;
                 font-size: .85em;
                 font-weight: 700;
-                color: #111;
+/*                color: #111;*/
                 padding: 0 2px;
                 text-decoration: none;
             }
 
+/*
             .card1 .actions a:hover {
                 color: #727272;
                 text-decoration: none;
             }        
+*/
 
             .container {
               padding:0;
               margin:0;
+            }
+            
+            .fa-square {
+                color: #524763;
+            }
+            
+            .clearfix:after {
+                visibility: hidden;
+                display: block;
+                font-size: 0;
+                content: " ";
+                clear: both;
+                height: 0;
+            }
+            .clearfix {
+                display: inline-block;
+            }
+            * html .clearfix {
+                height: 1%;
+            }
+            .clearfix {
+                display: block;
             }
 
 /*
@@ -191,8 +214,19 @@
                                 </div>
                                 <div class='actions'>
                                     <span class='language'>java++</span>
-                                    <a href=''>Join</a>
-                                    <a href=''>Enjoy</a>
+                                       <a href="#">
+                                           <span class="fa-stack fa-1x">
+                                              <i class="fa fa-square fa-stack-2x"></i>
+                                              <i class="fa fa-music fa-stack-1x fa-inverse"></i>
+                                           </span>
+                                       </a>
+                                        <a href="#">
+                                             <span class="fa-stack fa-1x">
+                                              <i class="fa fa-square fa-stack-2x"></i>
+                                              <i class="fa fa-play fa-stack-1x fa-inverse"></i>
+                                           </span>
+                                        </a>
+
                                  </div>
                             </div>
                         </div>
@@ -211,7 +245,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-md-3 col-sm-6">
+                         <div class="clearfix"></div>
+                       <div class="col-xs-6 col-md-3 col-sm-6">
                            <div class="card1">
                                 <img src="http://lorempixel.com/200/200/nightlife/4" alt="Avatar">
                                 <h3 class='title'>Flappy++</h3>
