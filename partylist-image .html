@@ -4,8 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto+Condensed|Roboto:900,700,400"> 
        
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
         
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         
@@ -31,16 +30,20 @@
 			/* New CSS here */
             
             /*w3schools card*/
-           .card1 {
+           #parties {
+                padding: 10px 0;
+                text-align: center;        
+            }
+           #parties .card1 {
                 margin:10px 5px;
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 transition: 0.3s;
-                width: 200px;
+                height: 315px;
                 border-radius: 5px;
             }
 
-            .card1:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            #parties .card1:hover {
+                box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
             }
 
             .card1 img {
@@ -98,6 +101,17 @@
                 text-decoration: none;
             }        
 
+            @media(max-width:480px) {
+                #parties .card1 {
+                    margin:10px 5px;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    transition: 0.3s;
+                    width: 250px;
+                    height: 315px;
+                    border-radius: 5px;
+                }
+                
+            }
 /*
             .full-width-container {
                 width: 100%;
@@ -106,12 +120,29 @@
                 margin: 0 auto;
             }
 */
-            .row{
-/*                padding: 15px 10px 10px 10px;*/
-            }
             
             /*w3 schools end*/
-            
+            /*modus*/
+            /* Team Section */
+                #team {
+                    padding: 10px 0;
+                    background: #e6e6e6;
+                }
+                img.img-thumbnail.team-img {
+                    width: 200px;
+                    height: 200px;
+                    border: 0;
+                    border-radius: 0;
+                    background-color: #f6f6f6;
+                }
+                #team .thumbnail {
+                    background: transparent;
+                    border: 0;
+                }
+                #team .thumbnail .caption {
+                    padding: 9px;
+                    color: #777;
+                }
 		</style>
 
 	</head>
@@ -122,73 +153,128 @@
                 <h1>top Parties</h1>
                 <p>These are the top parties on.</p>
             </header>
-<!--
-            <div class="row">
-               <div class='card img'>
-                    <div id='pic1'><div class='scrim'></div></div>
-                    <h3 class='title'>Flappy++</h3>
-                    <div class='description'>
-                        <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
+            <div id="parties" class="text-center">
+               <div class="container">
+                   <div class="section-title center">
+                      <h2>Parties</h2>
+                      <hr>
+                      <p>Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class='actions'>
-                        <span class='language'>Results++</span>
-                        <a href=''>Join</a>
-                        <a href=''>Enjoy</a>
-                        <a href=''>Edit</a>
+                    <div id="row">
+                        <div class="col-xs-12 col-md-3 col-sm-6">
+                            <div class="card1">
+                                <img src="http://lorempixel.com/200/200/nightlife/6" alt="Avatar">
+                                <h3 class='title'>Flappy++</h3>
+                                <h4 class="dj"><b>Jane Doe</b></h4> 
+                                <div class='description'>
+                                    <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
+                                </div>
+                               <div class='actions'>
+                                    <span class='language'>java++</span>
+                                    <a href=''>Join</a>
+                                    <a href=''>Enjoy</a>
+                                    <a href=''>Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-12 col-md-3 col-sm-6">
+                            <div class="card1">
+                                <img src="http://lorempixel.com/200/200/nightlife/6" alt="Avatar">
+                                <h3 class='title'>Flappy++</h3>
+                                <h4 class="dj"><b>Jane Doe</b></h4> 
+                                <div class='description'>
+                                    <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
+                                </div>
+                               <div class='actions'>
+                                    <span class='language'>java++</span>
+                                    <a href=''>Join</a>
+                                    <a href=''>Enjoy</a>
+                                    <a href=''>Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 col-sm-6">
+                           <div class="card1">
+                                <img src="http://lorempixel.com/200/200/nightlife/4" alt="Avatar">
+                                <h3 class='title'>Flappy++</h3>
+                                <h4 class="dj"><b>John Doe</b></h4> 
+                                <div class='description'>
+                                    <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
+                                </div>
+                               <div class='actions'>
+                                    <span class='language'>java++</span>
+                                    <a href=''>Join</a>
+                                    <a href=''>Enjoy</a>
+                                    <a href=''>Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 col-sm-6">
+                           <div class="card1">
+                                <img src="http://lorempixel.com/200/200/nightlife/4" alt="Avatar">
+                                <h3 class='title'>Flappy++</h3>
+                                <h4 class="dj"><b>John Doe</b></h4> 
+                                <div class='description'>
+                                    <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
+                                </div>
+                               <div class='actions'>
+                                    <span class='language'>java++</span>
+                                    <a href=''>Join</a>
+                                    <a href=''>Enjoy</a>
+                                    <a href=''>Edit</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
--->
-            <div class="row">
-               <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="card1">
-                    <img src="http://lorempixel.com/200/200/nightlife/6" alt="Avatar">
-                    <h3 class='title'>Flappy++</h3>
-                    <h4 class="dj"><b>Jane Doe</b></h4> 
-                    <div class='description'>
-                        <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
-                    </div>
-                   <div class='actions'>
-                        <span class='language'>java++</span>
-                        <a href=''>Join</a>
-                        <a href=''>Enjoy</a>
-                        <a href=''>Edit</a>
-                    </div>
+            
+            <!-- Team Section -->
+            <div id="team" class="text-center">
+              <div class="container">
+                <div class="section-title center">
+                  <h2>Meet the team</h2>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
                 </div>
-                </div>
-                 <div class="col-md-3 col-sm-6 col-xs-12">
-                   <div class="card1">
-                        <img src="http://lorempixel.com/200/200/nightlife/4" alt="Avatar">
-                        <h3 class='title'>Flappy++</h3>
-                        <h4 class="dj"><b>John Doe</b></h4> 
-                        <div class='description'>
-                            <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
-                        </div>
-                       <div class='actions'>
-                            <span class='language'>java++</span>
-                            <a href=''>Join</a>
-                            <a href=''>Enjoy</a>
-                            <a href=''>Edit</a>
-                        </div>
+                <div id="row">
+                  <div class="col-xs-6 col-md-3 col-sm-6">
+                    <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="img-thumbnail team-img">
+                      <div class="caption">
+                        <h3>John Doe</h3>
+                        <p>Founder / CEO</p>
+                      </div>
                     </div>
-                </div>
-               <div class="col-md-3 col-sm-6 col-xs-12">
-                   <div class="card1">
-                        <img src="http://lorempixel.com/200/200/nightlife/4" alt="Avatar">
-                        <h3 class='title'>Flappy++</h3>
-                        <h4 class="dj"><b>John Doe</b></h4> 
-                        <div class='description'>
-                            <p>An open source clone of Flappy Bird that utilizes the CMU graphics library.</p>
-                        </div>
-                       <div class='actions'>
-                            <span class='language'>java++</span>
-                            <a href=''>Join</a>
-                            <a href=''>Enjoy</a>
-                            <a href=''>Edit</a>
-                        </div>
+                  </div>
+                  <div class="col-xs-6 col-md-3 col-sm-6">
+                    <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="img-thumbnail team-img">
+                      <div class="caption">
+                        <h3>Mike Doe</h3>
+                        <p>Web Designer</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-xs-6 col-md-3 col-sm-6">
+                    <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="img-thumbnail team-img">
+                      <div class="caption">
+                        <h3>Jane Doe</h3>
+                        <p>Creative Director</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-3 col-sm-6">
+                    <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="img-thumbnail team-img">
+                      <div class="caption">
+                        <h3>Larry Show</h3>
+                        <p>Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 </html>
